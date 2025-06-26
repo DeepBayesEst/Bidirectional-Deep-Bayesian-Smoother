@@ -1,5 +1,5 @@
 # Bidirectional-Deep-Bayesian-Smoother
-This is the content of the experiment in our paper "Bidirectional Joint State-Memory Deep Bayesian Smoother".   
+This is the content of the code in our paper "Bidirectional Joint State-Memory Deep Bayesian Smoother".   
 
 
 ## Requirements
