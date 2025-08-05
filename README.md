@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 ## Data
-You can also regenerate or download the raw data. If you want to obtain access to the data we process, please contact us.
+You can also regenerate or download the raw data. 
 
 For "Aircraft tracking", you can download raw flight records with format "lt6" from the [open resource repository](https://c3.ndc.nasa.gov/dashlink/resources/132/). 
 The matlab and python programs used to process the raw data are in the following paths:
@@ -21,37 +21,13 @@ The matlab and python programs used to process the raw data are in the following
    └── mat_to_npy  #  Step 2. Python code for processing data in mat format.
 ~~~~
 
-For "Vehicle localization", you can download raw records from [XXX dataset](https://robots.engin.umich.edu/nclt/). 
+For "Vehicle localization", you can download the dataset by following the references provided in our paper.
+
+In addition, we also provide examples of the preprocessed data.
 
 ## Training & Testing
 
-The code for each experiment can be find in its corresponding path. We finely commented the code for EGBRNN (tensorflow) in Aircratf tracking, Non-Markov series, and NCLT localization. 
-In each experiment (tensorflow):
-
-(1) to train the EGBRNN, please execute:
-```Train_DBS.py```
-
-(2) to test the EGBRNN, please execute:
-```Test_DBS.py```
-
-For example,
-
-~~~~
-├── Filter_and_Smoother_TF
-   └── Deep_Bayesian_Filter
-         ├── Air_tracking
-            ├── EGBRNN
-               ├── EGBRNN_train.py
-               ├── EGBRNN_test.py
-~~~~
-
-<!-- ## Visualisation of Predicted Results
-FlightLLM enables highly accurate trajectory prediction in line with flight dynamics.
-![Illustrating the prediction result of FlightLLM](Pred_result.png)
-
-## Uncertainty Quantification
-FlightLLM can effectively measure the uncertainty of predictions.
-![Illustrating the prediction uncertainty of FlightLLM](Uncertainty.png) -->
+We have provided annotations for the code related to aircraft trajectory smoothing and vehicle localization, so you can easily locate and run them based on the directory structure.
 
 ## Note
 
